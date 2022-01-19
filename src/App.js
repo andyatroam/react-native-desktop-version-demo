@@ -8,14 +8,25 @@
 
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import TodosList from './TodosList';
+import {Button, ThemeProvider} from 'react-native-elements';
+import AnimationExample from './AnimationExample';
+import Root from './NavigationExample';
+import RNElementExample from './RNElementExample';
+// import TodosList from './TodosList';
+// import ToneExample from './ToneExample';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.welcome}>To-dos 2022-01-17</Text>
-      <TodosList />
-    </View>
+    <ThemeProvider>
+      <View style={styles.container}>
+        <Root />
+        {/* <Text style={styles.welcome}>To-dos 2022-01-17</Text> */}
+        {/* <TodosList /> */}
+        {/* <ToneExample /> */}
+        {/* <AnimationExample /> */}
+        {/* <RNElementExample /> */}
+      </View>
+    </ThemeProvider>
   );
 };
 
