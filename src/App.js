@@ -14,12 +14,14 @@ import Root from './NavigationExample';
 import RNElementExample from './RNElementExample';
 // import TodosList from './TodosList';
 // import ToneExample from './ToneExample';
+import TSExample from './TSExample';
 
 const App = () => {
   return (
     <ThemeProvider>
       <View style={styles.container}>
-        <Root />
+        <TSExample />
+        {/* <Root /> */}
         {/* <Text style={styles.welcome}>To-dos 2022-01-17</Text> */}
         {/* <TodosList /> */}
         {/* <ToneExample /> */}
