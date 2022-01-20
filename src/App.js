@@ -15,18 +15,22 @@ import RNElementExample from './RNElementExample';
 // import TodosList from './TodosList';
 // import ToneExample from './ToneExample';
 import TSExample from './TSExample';
+import WebviewExample from './WebviewExample';
+import MoveXY from './MoveXY';
 
 const App = () => {
   return (
     <ThemeProvider>
       <View style={styles.container}>
-        <TSExample />
+        {/* <TSExample /> */}
+        {/* <WebviewExample /> */}
         {/* <Root /> */}
         {/* <Text style={styles.welcome}>To-dos 2022-01-17</Text> */}
         {/* <TodosList /> */}
         {/* <ToneExample /> */}
         {/* <AnimationExample /> */}
         {/* <RNElementExample /> */}
+        <MoveXY />
       </View>
     </ThemeProvider>
   );
