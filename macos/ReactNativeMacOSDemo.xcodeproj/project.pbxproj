@@ -11,27 +11,27 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		420C6B29E5D77518A2CA25D1 /* libPods-rnmacosapptest-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6CCDAB6DFF1ADDABF45C13 /* libPods-rnmacosapptest-iOS.a */; };
+		420C6B29E5D77518A2CA25D1 /* libPods-ReactNativeMacOSDemo-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6CCDAB6DFF1ADDABF45C13 /* libPods-ReactNativeMacOSDemo-iOS.a */; };
 		5142014D2437B4B30078DB4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142014C2437B4B30078DB4F /* AppDelegate.m */; };
 		514201502437B4B30078DB4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142014F2437B4B30078DB4F /* ViewController.m */; };
 		514201522437B4B40078DB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514201512437B4B40078DB4F /* Assets.xcassets */; };
 		514201552437B4B40078DB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514201532437B4B40078DB4F /* Main.storyboard */; };
 		514201582437B4B40078DB4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 514201572437B4B40078DB4F /* main.m */; };
-		B2F802AB6C66BADFA33FB8D8 /* libPods-rnmacosapptest-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3178EA51FA3DEEA142D0B74C /* libPods-rnmacosapptest-macOS.a */; };
+		B2F802AB6C66BADFA33FB8D8 /* libPods-ReactNativeMacOSDemo-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3178EA51FA3DEEA142D0B74C /* libPods-ReactNativeMacOSDemo-macOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* rnmacosapptest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnmacosapptest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* ReactNativeMacOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeMacOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnmacosapptest/Info.plist; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeMacOSDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3178EA51FA3DEEA142D0B74C /* libPods-rnmacosapptest-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnmacosapptest-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3178EA51FA3DEEA142D0B74C /* libPods-ReactNativeMacOSDemo-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeMacOSDemo-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38423A3E24576CBC00BC2EAC /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		514201492437B4B30078DB4F /* rnmacosapptest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnmacosapptest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		514201492437B4B30078DB4F /* ReactNativeMacOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeMacOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5142014B2437B4B30078DB4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5142014C2437B4B30078DB4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5142014E2437B4B30078DB4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -40,14 +40,14 @@
 		514201542437B4B40078DB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		514201562437B4B40078DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		514201572437B4B40078DB4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		514201592437B4B40078DB4F /* rnmacosapptest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = rnmacosapptest.entitlements; sourceTree = "<group>"; };
-		830C2121DC960451B2C28BDD /* Pods-rnmacosapptest-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnmacosapptest-iOS.release.xcconfig"; path = "Target Support Files/Pods-rnmacosapptest-iOS/Pods-rnmacosapptest-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		BAE15A3245D3E4AEB9632415 /* Pods-rnmacosapptest-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnmacosapptest-iOS.debug.xcconfig"; path = "Target Support Files/Pods-rnmacosapptest-iOS/Pods-rnmacosapptest-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E1DC2A454515DF24265C3F34 /* Pods-rnmacosapptest-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnmacosapptest-macOS.debug.xcconfig"; path = "Target Support Files/Pods-rnmacosapptest-macOS/Pods-rnmacosapptest-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		514201592437B4B40078DB4F /* ReactNativeMacOSDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReactNativeMacOSDemo.entitlements; sourceTree = "<group>"; };
+		830C2121DC960451B2C28BDD /* Pods-ReactNativeMacOSDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeMacOSDemo-iOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeMacOSDemo-iOS/Pods-ReactNativeMacOSDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BAE15A3245D3E4AEB9632415 /* Pods-ReactNativeMacOSDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeMacOSDemo-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeMacOSDemo-iOS/Pods-ReactNativeMacOSDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E1DC2A454515DF24265C3F34 /* Pods-ReactNativeMacOSDemo-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeMacOSDemo-macOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeMacOSDemo-macOS/Pods-ReactNativeMacOSDemo-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		ED8F27E39314A0E71F5E75A5 /* Pods-rnmacosapptest-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnmacosapptest-macOS.release.xcconfig"; path = "Target Support Files/Pods-rnmacosapptest-macOS/Pods-rnmacosapptest-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		FF6CCDAB6DFF1ADDABF45C13 /* libPods-rnmacosapptest-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnmacosapptest-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8F27E39314A0E71F5E75A5 /* Pods-ReactNativeMacOSDemo-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeMacOSDemo-macOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeMacOSDemo-macOS/Pods-ReactNativeMacOSDemo-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		FF6CCDAB6DFF1ADDABF45C13 /* libPods-ReactNativeMacOSDemo-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeMacOSDemo-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420C6B29E5D77518A2CA25D1 /* libPods-rnmacosapptest-iOS.a in Frameworks */,
+				420C6B29E5D77518A2CA25D1 /* libPods-ReactNativeMacOSDemo-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,14 +63,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F802AB6C66BADFA33FB8D8 /* libPods-rnmacosapptest-macOS.a in Frameworks */,
+				B2F802AB6C66BADFA33FB8D8 /* libPods-ReactNativeMacOSDemo-macOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* rnmacosapptest-iOS */ = {
+		13B07FAE1A68108700A75B9A /* ReactNativeMacOSDemo-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -81,16 +81,16 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			path = "rnmacosapptest-iOS";
+			path = "ReactNativeMacOSDemo-iOS";
 			sourceTree = "<group>";
 		};
 		1986A43FA6A91CFACDF0A798 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BAE15A3245D3E4AEB9632415 /* Pods-rnmacosapptest-iOS.debug.xcconfig */,
-				830C2121DC960451B2C28BDD /* Pods-rnmacosapptest-iOS.release.xcconfig */,
-				E1DC2A454515DF24265C3F34 /* Pods-rnmacosapptest-macOS.debug.xcconfig */,
-				ED8F27E39314A0E71F5E75A5 /* Pods-rnmacosapptest-macOS.release.xcconfig */,
+				BAE15A3245D3E4AEB9632415 /* Pods-ReactNativeMacOSDemo-iOS.debug.xcconfig */,
+				830C2121DC960451B2C28BDD /* Pods-ReactNativeMacOSDemo-iOS.release.xcconfig */,
+				E1DC2A454515DF24265C3F34 /* Pods-ReactNativeMacOSDemo-macOS.debug.xcconfig */,
+				ED8F27E39314A0E71F5E75A5 /* Pods-ReactNativeMacOSDemo-macOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -100,13 +100,13 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				FF6CCDAB6DFF1ADDABF45C13 /* libPods-rnmacosapptest-iOS.a */,
-				3178EA51FA3DEEA142D0B74C /* libPods-rnmacosapptest-macOS.a */,
+				FF6CCDAB6DFF1ADDABF45C13 /* libPods-ReactNativeMacOSDemo-iOS.a */,
+				3178EA51FA3DEEA142D0B74C /* libPods-ReactNativeMacOSDemo-macOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5142014A2437B4B30078DB4F /* rnmacosapptest-macOS */ = {
+		5142014A2437B4B30078DB4F /* ReactNativeMacOSDemo-macOS */ = {
 			isa = PBXGroup;
 			children = (
 				38423A3E24576CBC00BC2EAC /* main.jsbundle */,
@@ -118,9 +118,9 @@
 				514201532437B4B40078DB4F /* Main.storyboard */,
 				514201562437B4B40078DB4F /* Info.plist */,
 				514201572437B4B40078DB4F /* main.m */,
-				514201592437B4B40078DB4F /* rnmacosapptest.entitlements */,
+				514201592437B4B40078DB4F /* ReactNativeMacOSDemo.entitlements */,
 			);
-			path = "rnmacosapptest-macOS";
+			path = "ReactNativeMacOSDemo-macOS";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -133,8 +133,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				5142014A2437B4B30078DB4F /* rnmacosapptest-macOS */,
-				13B07FAE1A68108700A75B9A /* rnmacosapptest-iOS */,
+				5142014A2437B4B30078DB4F /* ReactNativeMacOSDemo-macOS */,
+				13B07FAE1A68108700A75B9A /* ReactNativeMacOSDemo-iOS */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
@@ -148,8 +148,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* rnmacosapptest.app */,
-				514201492437B4B30078DB4F /* rnmacosapptest.app */,
+				13B07F961A680F5B00A75B9A /* ReactNativeMacOSDemo.app */,
+				514201492437B4B30078DB4F /* ReactNativeMacOSDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,9 +157,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* rnmacosapptest-iOS */ = {
+		13B07F861A680F5B00A75B9A /* ReactNativeMacOSDemo-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rnmacosapptest-iOS" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeMacOSDemo-iOS" */;
 			buildPhases = (
 				E93D67A3A20071912D9C7AA2 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -174,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = "rnmacosapptest-iOS";
-			productName = rnmacosapptest;
-			productReference = 13B07F961A680F5B00A75B9A /* rnmacosapptest.app */;
+			name = "ReactNativeMacOSDemo-iOS";
+			productName = ReactNativeMacOSDemo;
+			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeMacOSDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		514201482437B4B30078DB4F /* rnmacosapptest-macOS */ = {
+		514201482437B4B30078DB4F /* ReactNativeMacOSDemo-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5142015A2437B4B40078DB4F /* Build configuration list for PBXNativeTarget "rnmacosapptest-macOS" */;
+			buildConfigurationList = 5142015A2437B4B40078DB4F /* Build configuration list for PBXNativeTarget "ReactNativeMacOSDemo-macOS" */;
 			buildPhases = (
 				C3948C6BE1AAC4B417FA838B /* [CP] Check Pods Manifest.lock */,
 				381D8A6F24576A6C00465D17 /* Start Packager */,
@@ -195,9 +195,9 @@
 			);
 			dependencies = (
 			);
-			name = "rnmacosapptest-macOS";
-			productName = rnmacosapptest;
-			productReference = 514201492437B4B30078DB4F /* rnmacosapptest.app */;
+			name = "ReactNativeMacOSDemo-macOS";
+			productName = ReactNativeMacOSDemo;
+			productReference = 514201492437B4B30078DB4F /* ReactNativeMacOSDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -217,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "rnmacosapptest" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeMacOSDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -230,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* rnmacosapptest-iOS */,
-				514201482437B4B30078DB4F /* rnmacosapptest-macOS */,
+				13B07F861A680F5B00A75B9A /* ReactNativeMacOSDemo-iOS */,
+				514201482437B4B30078DB4F /* ReactNativeMacOSDemo-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +314,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnmacosapptest-macOS/Pods-rnmacosapptest-macOS-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMacOSDemo-macOS/Pods-ReactNativeMacOSDemo-macOS-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core-macOS/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -323,7 +323,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnmacosapptest-macOS/Pods-rnmacosapptest-macOS-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMacOSDemo-macOS/Pods-ReactNativeMacOSDemo-macOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C3948C6BE1AAC4B417FA838B /* [CP] Check Pods Manifest.lock */ = {
@@ -341,7 +341,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rnmacosapptest-macOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeMacOSDemo-macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -354,7 +354,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnmacosapptest-iOS/Pods-rnmacosapptest-iOS-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMacOSDemo-iOS/Pods-ReactNativeMacOSDemo-iOS-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core-iOS/AccessibilityResources.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
@@ -395,7 +395,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnmacosapptest-iOS/Pods-rnmacosapptest-iOS-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMacOSDemo-iOS/Pods-ReactNativeMacOSDemo-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8B25097AA86624F4E8CC608 /* [CP] Embed Pods Frameworks */ = {
@@ -404,7 +404,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnmacosapptest-iOS/Pods-rnmacosapptest-iOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMacOSDemo-iOS/Pods-ReactNativeMacOSDemo-iOS-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -413,7 +413,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnmacosapptest-iOS/Pods-rnmacosapptest-iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMacOSDemo-iOS/Pods-ReactNativeMacOSDemo-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E93D67A3A20071912D9C7AA2 /* [CP] Check Pods Manifest.lock */ = {
@@ -431,7 +431,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rnmacosapptest-iOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeMacOSDemo-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -503,13 +503,13 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAE15A3245D3E4AEB9632415 /* Pods-rnmacosapptest-iOS.debug.xcconfig */;
+			baseConfigurationReference = BAE15A3245D3E4AEB9632415 /* Pods-ReactNativeMacOSDemo-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "rnmacosapptest-iOS/Info.plist";
+				INFOPLIST_FILE = "ReactNativeMacOSDemo-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -517,7 +517,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = rnmacosapptest;
+				PRODUCT_NAME = ReactNativeMacOSDemo;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -526,12 +526,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 830C2121DC960451B2C28BDD /* Pods-rnmacosapptest-iOS.release.xcconfig */;
+			baseConfigurationReference = 830C2121DC960451B2C28BDD /* Pods-ReactNativeMacOSDemo-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "rnmacosapptest-iOS/Info.plist";
+				INFOPLIST_FILE = "ReactNativeMacOSDemo-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -539,7 +539,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = rnmacosapptest;
+				PRODUCT_NAME = ReactNativeMacOSDemo;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -547,12 +547,12 @@
 		};
 		5142015B2437B4B40078DB4F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1DC2A454515DF24265C3F34 /* Pods-rnmacosapptest-macOS.debug.xcconfig */;
+			baseConfigurationReference = E1DC2A454515DF24265C3F34 /* Pods-ReactNativeMacOSDemo-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = "rnmacosapptest-macos/Info.plist";
+				INFOPLIST_FILE = "ReactNativeMacOSDemo-macos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_LDFLAGS = (
@@ -561,18 +561,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = rnmacosapptest;
+				PRODUCT_NAME = ReactNativeMacOSDemo;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		5142015C2437B4B40078DB4F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED8F27E39314A0E71F5E75A5 /* Pods-rnmacosapptest-macOS.release.xcconfig */;
+			baseConfigurationReference = ED8F27E39314A0E71F5E75A5 /* Pods-ReactNativeMacOSDemo-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "rnmacosapptest-macos/Info.plist";
+				INFOPLIST_FILE = "ReactNativeMacOSDemo-macos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_LDFLAGS = (
@@ -581,7 +581,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = rnmacosapptest;
+				PRODUCT_NAME = ReactNativeMacOSDemo;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -702,7 +702,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rnmacosapptest-iOS" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeMacOSDemo-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -711,7 +711,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5142015A2437B4B40078DB4F /* Build configuration list for PBXNativeTarget "rnmacosapptest-macOS" */ = {
+		5142015A2437B4B40078DB4F /* Build configuration list for PBXNativeTarget "ReactNativeMacOSDemo-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5142015B2437B4B40078DB4F /* Debug */,
@@ -720,7 +720,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "rnmacosapptest" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeMacOSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

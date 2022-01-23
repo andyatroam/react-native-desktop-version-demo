@@ -10,7 +10,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {Button, ThemeProvider} from 'react-native-elements';
 import AnimationExample from './AnimationExample';
-import Root from './NavigationExample';
+import Root from './navigation/NavigationExample';
 import RNElementExample from './RNElementExample';
 // import TodosList from './TodosList';
 // import ToneExample from './ToneExample';
@@ -24,13 +24,13 @@ const App = () => {
       <View style={styles.container}>
         {/* <TSExample /> */}
         {/* <WebviewExample /> */}
-        {/* <Root /> */}
+        <Root />
         {/* <Text style={styles.welcome}>To-dos 2022-01-17</Text> */}
         {/* <TodosList /> */}
         {/* <ToneExample /> */}
         {/* <AnimationExample /> */}
         {/* <RNElementExample /> */}
-        <MoveXY />
+        {/* <MoveXY /> */}
       </View>
     </ThemeProvider>
   );

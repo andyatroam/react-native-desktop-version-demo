@@ -1,4 +1,4 @@
-package com.rnmacosapptest;
+package com.ReactNativeMacOSDemo;
 
 import com.facebook.react.ReactActivity;
 
