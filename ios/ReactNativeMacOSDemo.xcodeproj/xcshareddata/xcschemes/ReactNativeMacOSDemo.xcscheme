@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "rnmacosapptest.app"
-               BlueprintName = "rnmacosapptest"
-               ReferencedContainer = "container:rnmacosapptest.xcodeproj">
+               BuildableName = "ReactNativeMacOSDemo.app"
+               BlueprintName = "ReactNativeMacOSDemo"
+               ReferencedContainer = "container:ReactNativeMacOSDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "rnmacosapptestTests.xctest"
-               BlueprintName = "rnmacosapptestTests"
-               ReferencedContainer = "container:rnmacosapptest.xcodeproj">
+               BuildableName = "ReactNativeMacOSDemoTests.xctest"
+               BlueprintName = "ReactNativeMacOSDemoTests"
+               ReferencedContainer = "container:ReactNativeMacOSDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "rnmacosapptest.app"
-            BlueprintName = "rnmacosapptest"
-            ReferencedContainer = "container:rnmacosapptest.xcodeproj">
+            BuildableName = "ReactNativeMacOSDemo.app"
+            BlueprintName = "ReactNativeMacOSDemo"
+            ReferencedContainer = "container:ReactNativeMacOSDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "rnmacosapptest.app"
-            BlueprintName = "rnmacosapptest"
-            ReferencedContainer = "container:rnmacosapptest.xcodeproj">
+            BuildableName = "ReactNativeMacOSDemo.app"
+            BlueprintName = "ReactNativeMacOSDemo"
+            ReferencedContainer = "container:ReactNativeMacOSDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
