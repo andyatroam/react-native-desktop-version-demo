@@ -1,19 +1,19 @@
-import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import WelcomeScreen from '../examples/welcome/WelcomeScreen';
+import React from 'react';
+import MainScreen from '../examples/welcome/MainScreen';
 
 const Stack = createStackNavigator();
 
-function WelcomeStack() {
+function MainStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Home"
-        component={WelcomeScreen}
+        name="MainScreen"
         options={{headerShown: false}}
+        component={MainScreen}
       />
     </Stack.Navigator>
   );
 }
 
-export default WelcomeStack;
+export default MainStack;

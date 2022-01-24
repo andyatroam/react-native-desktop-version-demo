@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {ActivityIndicator, Button, StyleSheet, Text, View} from 'react-native';
 
@@ -16,27 +17,20 @@ const styles = StyleSheet.create({
     borderColor: '#cccccc',
     borderWidth: 1,
   },
-  container: {
-    marginTop: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  image: {
-    width: 200,
-    height: 200,
-    marginBottom: 24,
-  },
 });
 
 const LoadingScreen = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.background}>
       <ActivityIndicator />
       <Text>Loading now...</Text>
       <Button
         title="Skip"
+        disabled={false}
         onPress={() => {
-          // navigation.navigate('NewFeaturesScreen');
+          navigation.navigate('Intro');
         }}
       />
     </View>

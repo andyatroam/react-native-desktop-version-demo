@@ -17,21 +17,23 @@ import RNElementExample from './RNElementExample';
 import TSExample from './TSExample';
 import WebviewExample from './WebviewExample';
 import MoveXY from './MoveXY';
+import AppRoot from './navigation/AppRoot2';
 
 const App = () => {
   return (
     <ThemeProvider>
-      <View style={styles.container}>
-        {/* <TSExample /> */}
-        {/* <WebviewExample /> */}
-        <Root />
-        {/* <Text style={styles.welcome}>To-dos 2022-01-17</Text> */}
-        {/* <TodosList /> */}
-        {/* <ToneExample /> */}
-        {/* <AnimationExample /> */}
-        {/* <RNElementExample /> */}
-        {/* <MoveXY /> */}
-      </View>
+      {/* <View style={styles.container}> */}
+      {/* <TSExample /> */}
+      {/* <WebviewExample /> */}
+      {/* <Root /> */}
+      <AppRoot />
+      {/* <Text style={styles.welcome}>To-dos 2022-01-17</Text> */}
+      {/* <TodosList /> */}
+      {/* <ToneExample /> */}
+      {/* <AnimationExample /> */}
+      {/* <RNElementExample /> */}
+      {/* <MoveXY /> */}
+      {/* </View> */}
     </ThemeProvider>
   );
 };
