@@ -23,10 +23,14 @@ const Drawer = createDrawerNavigator();
 function MyDrawer() {
   return (
     <Drawer.Navigator
-      screenOptions={{
-        drawerLabel: 'My Drawer',
-        // drawerType: 'permanent',
-      }}>
+      initialRouteName="Article"
+      drawerType="permanent"
+      screenOptions={
+        {
+          // drawerLabel: 'My Drawer',
+          // drawerType: 'permanent',
+        }
+      }>
       <Drawer.Screen name="Article" component={Article} />
       <Drawer.Screen name="Feed" component={Feed} />
     </Drawer.Navigator>

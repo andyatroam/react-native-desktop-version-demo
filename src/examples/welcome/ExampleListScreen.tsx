@@ -1,7 +1,6 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {Icon} from 'react-native-elements';
 import ExampleList, {ExampleItemData} from '../../ExampleList';
 
 const styles = StyleSheet.create({
@@ -11,14 +10,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     // alignItems: 'center',
   },
+  heading: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginVertical: 20,
+  },
   item: {
     paddingLeft: 10,
     paddingVertical: 10,
     marginBottom: 1,
+    flexDirection: 'row',
     backgroundColor: '#ffcc00',
+    marginVertical: 6,
   },
   title: {
-    fontSize: 20,
+    fontSize: 15,
   },
 });
 
@@ -26,6 +32,7 @@ const Item = ({title}: {title: string}) => (
   <View style={styles.item}>
     {/* <Icon name="sc-telegram" /> */}
 
+    <Text> 👉🏻 </Text>
     <Text style={styles.title}>{title}</Text>
   </View>
 );
@@ -46,7 +53,7 @@ const ExampleScreen = () => {
 
   return (
     <View style={styles.background}>
-      <Text>Examples list</Text>
+      <Text style={styles.heading}>Examples list</Text>
       <FlatList data={ExampleList} renderItem={renderItem} />
     </View>
   );
