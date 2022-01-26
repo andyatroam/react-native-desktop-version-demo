@@ -1,7 +1,7 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
 import {Text, View} from 'react-native';
-import ExampleScreen from './ExampleScreen';
+import ExampleScreen from './ExampleListScreen';
 
 const headerOptions = {
   headerStyle: {

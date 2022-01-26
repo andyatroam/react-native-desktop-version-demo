@@ -1,12 +1,12 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import {View, Text} from 'react-native';
 
 function TSExample() {
   return (
     <View>
       <Text>Hello, Guess what? I'am a TypeScript file!!</Text>
-    </View> 
-  )
+    </View>
+  );
 }
 
-export default TSExample 
+export default TSExample;

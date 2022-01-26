@@ -254,7 +254,7 @@ PODS:
   - React-jsinspector (0.64.25)
   - react-native-safe-area-context (3.3.2):
     - React-Core
-  - react-native-webview (11.17.0):
+  - react-native-webview (11.17.1):
     - React-Core
   - React-perflogger (0.64.25)
   - React-RCTActionSheet (0.64.25):
@@ -322,11 +322,12 @@ PODS:
     - React-perflogger (= 0.64.25)
   - RNCMaskedView (0.1.11):
     - React
-  - RNGestureHandler (2.2.0):
+  - RNGestureHandler (1.10.3):
     - React-Core
-  - RNScreens (3.10.2):
+  - RNReanimated (1.13.3):
     - React-Core
-    - React-RCTImage
+  - RNScreens (2.18.1):
+    - React-Core
   - RNVectorIcons (9.0.0):
     - React-Core
   - Yoga (1.14.0)
@@ -387,12 +388,13 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native-macos/ReactCommon`)
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native-macos/ReactCommon/yoga`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs:
     - CocoaAsyncSocket
     - Flipper
     - Flipper-DoubleConversion
@@ -470,6 +472,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/masked-view"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNVectorIcons:
@@ -505,7 +509,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 7704681915f72bd428056d03e1a8b1c3e23fde6a
   React-jsinspector: 6e1ba51326c5d58cf32ada3d2d28175fb2755af6
   react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
-  react-native-webview: 10996be8bcc5e37a30dbc139fc544bb651dc8612
+  react-native-webview: 162b6453d074e0b1c7025242bb7a939b6f72b9e7
   React-perflogger: d1da9f2ebf56e11f5d3f11bc6effba218c0bca95
   React-RCTActionSheet: 5907b4b7ac90304beb2fc6b93fc988ed592b9d92
   React-RCTAnimation: a2b957ad2adbb6c0bdfbfd311c1c47af7ece161a
@@ -519,12 +523,13 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 7864e45847b2447083e4bbf67dea2700f792f840
   ReactCommon: 15390f19fc5d447ab0721b03c6f9c1e2afbc4fe2
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
-  RNGestureHandler: bf572f552ea324acd5b5464b8d30755b2d8c1de6
-  RNScreens: d6da2b9e29cf523832c2542f47bf1287318b1868
+  RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
+  RNReanimated: 514a11da3a2bcc6c3dfd9de32b38e2b9bf101926
+  RNScreens: f7ad633b2e0190b77b6a7aab7f914fad6f198d8d
   RNVectorIcons: 4143ba35feebab8fdbe6bc43d1e776b393d47ac8
   Yoga: c45b437df892ecf6ad56016e7a491c50e40b5845
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: b1ca52a9e19b6269ba0b2cba0ecaf44a8832b297
+PODFILE CHECKSUM: e7a3cfe4ca7983da3606daa4c52a4c7080d16345
 
 COCOAPODS: 1.11.2

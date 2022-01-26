@@ -1,5 +1,6 @@
-package com.ReactNativeMacOSDemo;
+package com.roamdigital.app.rnwmdemo;
 
+import android.os.Bundle;
 import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {

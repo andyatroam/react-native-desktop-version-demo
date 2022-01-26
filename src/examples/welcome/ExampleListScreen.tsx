@@ -1,15 +1,8 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {
-  Button,
-  FlatList,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-import {TouchableHighlight} from 'react-native-gesture-handler';
+import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Icon} from 'react-native-elements';
+import ExampleList, {ExampleItemData} from '../../ExampleList';
 
 const styles = StyleSheet.create({
   background: {
@@ -20,25 +13,19 @@ const styles = StyleSheet.create({
   },
   item: {
     paddingLeft: 10,
+    paddingVertical: 10,
+    marginBottom: 1,
+    backgroundColor: '#ffcc00',
   },
   title: {
     fontSize: 20,
   },
 });
-interface ExampleItem {
-  title: string;
-  path: string;
-}
-
-const examples: ExampleItem[] = [
-  {title: 'test1', path: 'Test1'},
-  {title: 'test2', path: 'Test2'},
-  {title: 'test3', path: 'Test3'},
-  {title: 'test4', path: 'Test4'},
-];
 
 const Item = ({title}: {title: string}) => (
   <View style={styles.item}>
+    {/* <Icon name="sc-telegram" /> */}
+
     <Text style={styles.title}>{title}</Text>
   </View>
 );
@@ -46,11 +33,12 @@ const Item = ({title}: {title: string}) => (
 const ExampleScreen = () => {
   const navigation = useNavigation();
 
-  const renderItem = ({item}: {item: ExampleItem}) => (
+  const renderItem = ({item}: {item: ExampleItemData}) => (
     <TouchableOpacity
+      key={item.name}
       onPress={() => {
         console.log(item.title);
-        navigation.navigate(item.path);
+        navigation.navigate(item.name);
       }}>
       <Item title={item.title} />
     </TouchableOpacity>
@@ -59,7 +47,7 @@ const ExampleScreen = () => {
   return (
     <View style={styles.background}>
       <Text>Examples list</Text>
-      <FlatList data={examples} renderItem={renderItem} />
+      <FlatList data={ExampleList} renderItem={renderItem} />
     </View>
   );
 };

@@ -1,8 +1,9 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-import {Text, View} from 'react-native';
-import ExampleScreen from '../examples/welcome/ExampleScreen';
-
+import {View} from 'react-native';
+import ExampleList from '../ExampleList';
+import RNElementExample from '../examples/element-ui-lib/RNElementExample';
+import ExampleScreen from '../examples/welcome/ExampleListScreen';
 const Stack = createStackNavigator();
 
 function ExampleStack() {
@@ -13,24 +14,19 @@ function ExampleStack() {
         component={ExampleScreen}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="Test1"
-        component={() => (
-          <View>
-            <Text>Animation example 1</Text>
-          </View>
-        )}
+      {/* <Stack.Screen
+        name="RNElementExample"
+        component={RNElementExample}
         options={{headerShown: true}}
-      />
-      <Stack.Screen
-        name="Test2"
-        component={() => (
-          <View>
-            <Text>Animation example 2</Text>
-          </View>
-        )}
-        options={{headerShown: true}}
-      />
+      /> */}
+      {ExampleList.map(({title, name, screen: ExampleItemScreen}) => (
+        <Stack.Screen
+          key={title}
+          name={name}
+          component={ExampleItemScreen}
+          options={{headerShown: true}}
+        />
+      ))}
     </Stack.Navigator>
   );
 }

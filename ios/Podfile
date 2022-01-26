@@ -2,6 +2,8 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 platform :ios, '11.0'
+# add this for solve the issue: Couldn't determine repo type for URL: `https://cdn.cocoapods.org/`: execution expired
+source 'https://github.com/CocoaPods/Specs.git'
 
 target 'ReactNativeMacOSDemo' do
   config = use_native_modules!
@@ -11,6 +13,8 @@ target 'ReactNativeMacOSDemo' do
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :hermes_enabled => false
   )
+
+  # pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'ReactNativeMacOSDemoTests' do
     inherit! :complete
@@ -25,6 +29,6 @@ target 'ReactNativeMacOSDemo' do
 
   post_install do |installer|
     react_native_post_install(installer)
-    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+    # __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
 end

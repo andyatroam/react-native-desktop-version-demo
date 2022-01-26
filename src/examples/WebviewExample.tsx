@@ -1,14 +1,15 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {WebView} from 'react-native-webview';
 
 const styles = StyleSheet.create({
   background: {
     flex: 1,
     backgroundColor: 'white',
-    padding: 20,
+    paddingTop: 100,
     justifyContent: 'center',
-    // alignItems: 'center',
+    alignItems: 'center',
   },
   button: {
     paddingHorizontal: 20,
@@ -31,16 +32,28 @@ const styles = StyleSheet.create({
 
 function WebviewExample() {
   return (
+    // <SafeAreaView>
     <View style={styles.background}>
+      {/* <Text>This is a Webview test</Text>
       <Text>This is a Webview test</Text>
+      <Text>This is a Webview test</Text>
+      <Text>This is a Webview test</Text>
+      <Text>This is a Webview test</Text>
+      <Text>This is a Webview test</Text>
+      <Text>This is a Webview test</Text> */}
       <WebView
-        style={{width: '100%', borderWidth: 2, backgroundColor: '#ffcc00'}}
+        style={{
+          width: 300,
+          height: 300,
+          borderWidth: 2,
+          backgroundColor: '#ffcc00',
+        }}
         originWhitelist={['*']}
-        // source={{ html: '<h1>This is a static HTML source!</h1>' }}
         source={{uri: 'https://google.com'}}
       />
       <Text>React Native Webview supports all 4 platform</Text>
     </View>
+    // </SafeAreaView>
   );
 }
 
