@@ -30,7 +30,7 @@ const LoadingScreen = () => {
         title="Skip"
         disabled={false}
         onPress={() => {
-          navigation.navigate('Intro');
+          navigation.navigate('MainScreen');
         }}
       />
     </View>

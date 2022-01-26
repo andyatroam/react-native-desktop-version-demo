@@ -18,6 +18,7 @@ function RNElementExample(): JSX.Element {
       <ButtonGroup
         buttons={['Multiple', 'Select', 'Button', 'Group']}
         selectMultiple
+        vertical
         selectedIndexes={selectedIndexes}
         onPress={value => {
           setSelectedIndexes(value);
