@@ -1,6 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Icon} from 'react-native-elements';
 import ExampleList, {ExampleItemData} from '../../ExampleList';
 
 const styles = StyleSheet.create({
@@ -14,6 +15,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginVertical: 20,
+    color: '#00214d',
   },
   item: {
     paddingLeft: 10,
@@ -31,8 +33,13 @@ const styles = StyleSheet.create({
 const Item = ({title}: {title: string}) => (
   <View style={styles.item}>
     {/* <Icon name="sc-telegram" /> */}
-
-    <Text> 👉🏻 </Text>
+    <Icon
+      name="play"
+      hasTVPreferredFocus
+      tvParallaxProperties
+      type="evilicon"
+      // color="#517fa4"
+    />
     <Text style={styles.title}>{title}</Text>
   </View>
 );

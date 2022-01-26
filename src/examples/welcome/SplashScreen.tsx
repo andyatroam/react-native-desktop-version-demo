@@ -1,6 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {ActivityIndicator, Button, StyleSheet, Text, View} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
+import {Heading, Paragraph} from '../../components/Typography';
 
 const styles = StyleSheet.create({
   background: {
@@ -24,10 +25,13 @@ const LoadingScreen = () => {
 
   return (
     <View style={styles.background}>
-      <ActivityIndicator />
-      <Text>Loading now...</Text>
+      {/* <ActivityIndicator /> */}
+      <Heading>React Native macOS demo</Heading>
+      <Paragraph>
+        This is a demo project for demonstrating the ability of React Native{' '}
+      </Paragraph>
       <Button
-        title="Skip"
+        title="NEXT"
         disabled={false}
         onPress={() => {
           navigation.navigate('MainScreen');

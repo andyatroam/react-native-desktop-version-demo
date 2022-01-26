@@ -1,57 +1,94 @@
+import {StackActions, useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {Button, StyleSheet, View} from 'react-native';
-import {Text} from 'react-native-elements';
+import {Button, StyleSheet, TouchableOpacity, View} from 'react-native';
+import {Icon, Text} from 'react-native-elements';
 import {Avatar} from 'react-native-elements/dist/avatar/Avatar';
 
 const styles = StyleSheet.create({
   background: {
-    backgroundColor: 'white',
+    paddingVertical: 16,
+    backgroundColor: '#001534',
+    paddingHorizontal: 20,
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   button: {
     paddingHorizontal: 10,
     paddingVertical: 10,
     minWidth: 180,
-    fontWeight: 'bold',
-    backgroundColor: '#00ebc7',
+    flexDirection: 'row',
+    alignItems: 'center',
+    // backgroundColor: '#00ebc7',
     borderColor: '#00214d',
     borderWidth: 3,
-    borderRadius: 10,
-    color: '#00214d',
+    borderRadius: 6,
+    color: '#b7c9e4',
     marginBottom: 10,
+  },
+  buttonText: {
+    fontWeight: 'bold',
+    color: '#b7c9e4',
+    marginLeft: 12,
   },
 });
 
+function getButton({title, icon, onPress}) {
+  return (
+    <TouchableOpacity onPress={onPress}>
+      <View
+        style={{
+          ...styles.button,
+        }}>
+        <Icon
+          name={icon}
+          hasTVPreferredFocus
+          tvParallaxProperties
+          type="evilicon"
+          color="#517fa4"
+        />
+        <Text style={styles.buttonText}>{title}</Text>
+      </View>
+    </TouchableOpacity>
+  );
+}
+
 function SideBarScreen({callback}: {callback: (name: string) => void}) {
-  // const nav = useNavigation();
+  const nav = useNavigation();
 
   return (
     <View style={styles.background}>
-      <Avatar />
-      <Button
-        title="Examples"
-        onPress={() => {
-          if (callback) {
-            callback('Examples');
-          }
-          // navigation.navigate('Examples');
-        }}
+      <Avatar
+        size="large"
+        rounded
+        containerStyle={{marginBottom: 30, backgroundColor: '#fde24f'}}
+        title="R"
       />
 
-      <Button
-        title="Settings"
-        onPress={() => {
-          if (callback) {
-            callback('Settings');
-          }
-          // navigation.navigate('Examples');
-        }}
-      />
-
-      {/* <TouchableOpacity>
-        <Text style={styles.button}>Examples</Text>
-      </TouchableOpacity> */}
-      <Text style={styles.button}>Settings</Text>
-      <Text style={styles.button}>Profiles</Text>
+      {getButton({
+        title: 'Examples',
+        icon: 'play',
+        onPress: () => {
+          // nav.navigate('Examples');
+          nav.dispatch(
+            StackActions.replace('MainScreen', {screen: 'Examples'}),
+          );
+        },
+      })}
+      <View style={{flex: 1}} />
+      {getButton({
+        title: 'Settings',
+        icon: 'play',
+        onPress: () => {
+          nav.dispatch(StackActions.replace('MainScreen', {screen: 'Setting'}));
+        },
+      })}
+      {getButton({
+        title: 'Profile',
+        icon: 'play',
+        onPress: () => {
+          nav.dispatch(StackActions.replace('MainScreen', {screen: 'Profile'}));
+        },
+      })}
     </View>
   );
 }

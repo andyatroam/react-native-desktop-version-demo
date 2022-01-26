@@ -1,6 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
+import {Paragraph} from '../../components/Typography';
 
 const styles = StyleSheet.create({
   background: {
@@ -16,14 +17,14 @@ const IntroScreen = () => {
 
   return (
     <View style={styles.background}>
-      <Text>
+      <Paragraph>
         This is a demo to show some functionality of React Native Windows &
         macOS
-      </Text>
+      </Paragraph>
       <Button
         title="Next"
         onPress={() => {
-          navigation.navigate('Examples');
+          navigation.navigate('MainScreen');
         }}
       />
     </View>

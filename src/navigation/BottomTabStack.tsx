@@ -1,29 +1,10 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
 import {View} from 'react-native';
-import {Text} from 'react-native-elements';
-import ExampleScreen from '../examples/welcome/ExampleListScreen';
+import {Icon, Text} from 'react-native-elements';
 import ExampleStack from './ExampleStack';
 
 const Tab = createBottomTabNavigator();
-
-const headerOptions = {
-  headerStyle: {
-    height: 70,
-    borderBottomColor: '#222224',
-    borderBottomWidth: 6,
-  },
-  headerTitleStyle: {
-    fontWeight: 'bold',
-    fontSize: 20,
-  },
-  headerLeft: () => {
-    return <View />;
-  },
-  tabBarIcon: () => {
-    return <View />;
-  },
-};
 
 const TabView = () => {
   return (
@@ -33,32 +14,56 @@ const TabView = () => {
   );
 };
 
+const getTabIcon = (routeName: string, focused: boolean = false) => {
+  let iconName = 'gear';
+  if (routeName === 'Profile') {
+    iconName = focused ? 'user' : 'user';
+  } else if (routeName === 'Examples') {
+    iconName = focused ? 'star' : 'star';
+  } else if (routeName === 'Setting') {
+    iconName = focused ? 'gear' : 'gear';
+  }
+  return (
+    <Icon
+      name={iconName}
+      hasTVPreferredFocus
+      tvParallaxProperties
+      type="evilicon"
+      color="#517fa4"
+    />
+  );
+};
+
 const BottomTabScreen = () => {
   return (
-    <Tab.Navigator
-      initialRouteName="Main"
-      options={{headerShown: false}}
-      screenOptions={headerOptions}
-      tabBarOptions={{
-        activeTintColor: 'blue',
-        inactiveTintColor: 'gray',
-      }}>
-      <Tab.Screen
+    <View style={{flex: 1, flexDirection: 'row'}}>
+      <Tab.Navigator
+        initialRouteName="Main"
         options={{headerShown: false}}
-        name="Examples"
-        component={ExampleStack}
-      />
-      <Tab.Screen
-        options={{headerShown: false}}
-        name="Setting"
-        component={TabView}
-      />
-      <Tab.Screen
-        options={{headerShown: false}}
-        name="Profile"
-        component={TabView}
-      />
-    </Tab.Navigator>
+        screenOptions={({route}) => ({
+          tabBarIcon: ({focused}) => getTabIcon(route.name, focused),
+        })}
+        tabBarOptions={{
+          activeTintColor: '#00ebc7',
+          inactiveTintColor: '#00214d',
+        }}>
+        <Tab.Screen
+          options={{headerShown: false}}
+          name="Examples"
+          component={ExampleStack}
+        />
+        <Tab.Screen
+          options={{headerShown: false}}
+          name="Setting"
+          component={TabView}
+        />
+        <Tab.Screen
+          options={{headerShown: false}}
+          name="Profile"
+          component={TabView}
+        />
+      </Tab.Navigator>
+    </View>
   );
 };
 
