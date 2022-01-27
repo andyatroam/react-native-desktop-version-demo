@@ -2,15 +2,10 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {Icon} from 'react-native-elements';
-import {Heading} from '../../components/Typography';
-import ExampleList, {ExampleItemData} from '../../ExampleList';
+import ScreenContent from '../../../components/ScreenContent';
+import ExampleList, {ExampleItemData} from '../../../ExampleList';
 
 const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-    padding: 20,
-    justifyContent: 'center',
-  },
   item: {
     paddingLeft: 10,
     paddingVertical: 15,
@@ -22,7 +17,7 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     marginVertical: 6,
   },
-  title: {
+  itemTitle: {
     fontSize: 15,
     fontWeight: 'bold',
   },
@@ -37,7 +32,7 @@ const Item = ({title}: {title: string}) => (
       type="evilicon"
       color="#00214d"
     />
-    <Text style={styles.title}>{title}</Text>
+    <Text style={styles.itemTitle}>{title}</Text>
   </View>
 );
 
@@ -48,18 +43,17 @@ const ExampleScreen = () => {
     <TouchableOpacity
       key={item.name}
       onPress={() => {
-        console.log(item.title);
         navigation.navigate(item.name);
       }}>
       <Item title={item.title} />
     </TouchableOpacity>
   );
-
   return (
-    <View style={styles.background}>
-      <Heading>Examples list</Heading>
-      <FlatList data={ExampleList} renderItem={renderItem} />
-    </View>
+    <ScreenContent
+      title="Example list"
+      content={<FlatList data={ExampleList} renderItem={renderItem} />}
+      footer={<Text>Footer</Text>}
+    />
   );
 };
 

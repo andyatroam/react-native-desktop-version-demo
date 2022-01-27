@@ -1,6 +1,6 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-import IntroScreen from '../examples/welcome/IntroScreen';
+import IntroScreen from '../features/Examples/welcome/IntroScreen';
 
 const Stack = createStackNavigator();
 

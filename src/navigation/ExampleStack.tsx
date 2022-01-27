@@ -2,8 +2,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import {View} from 'react-native';
 import ExampleList from '../ExampleList';
-import RNElementExample from '../examples/element-ui-lib/RNElementExample';
-import ExampleScreen from '../examples/welcome/ExampleListScreen';
+import RNElementExample from '../features/Examples/element-ui/RNElementExample';
+import ExampleScreen from '../features/Examples/welcome/ExampleListScreen';
 const Stack = createStackNavigator();
 
 function ExampleStack() {

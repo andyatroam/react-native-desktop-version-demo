@@ -1,10 +1,13 @@
-import ElementCards from './examples/element-ui-lib/ElementCards';
-import RNElementExample from './examples/element-ui-lib/RNElementExample';
-import MoveXY from './examples/animation/MoveXY';
-import TodosList from './examples/todo/TodosList';
-import WebviewExample from './examples/webview/WebviewExample';
-import ColorScheme from './examples/native/ColorScheme';
-import InputExample from './examples/element-ui-lib/ElementInputs';
+import ElementCards from './features/Examples/element-ui/ElementCards';
+import RNElementExample from './features/Examples/element-ui/RNElementExample';
+import MoveXY from './features/Examples/animation/MoveXY';
+import TodosList from './features/Examples/todo/TodosList';
+import WebviewExample from './features/Examples/webview/WebviewExample';
+import ColorScheme from './features/Examples/native/ColorScheme';
+import InputExample from './features/Examples/element-ui/ElementInputs';
+import PaperButtons from './features/Examples/paper-ui/PaperButton';
+import RNLayoutAnimation from './features/Examples/animation/RNLayoutAnimation';
+import AsyncStorageExample from './features/Examples/storage/AsyncStorageExample';
 
 export interface ExampleItemData {
   title: string;
@@ -28,6 +31,16 @@ const ExampleList: ExampleItemData[] = [
   {title: 'Webview', name: 'Webview', screen: WebviewExample},
   {title: 'TODO List', name: 'TodosList', screen: TodosList},
   {title: 'Color Scheme', name: 'ColorScheme', screen: ColorScheme},
-  // {title: 'Reanimated', name: 'Reanimated', screen: Reanimated},
+  {title: 'PaperButtons', name: 'PaperButtons', screen: PaperButtons},
+  {
+    title: 'RNLayoutAnimation',
+    name: 'RNLayoutAnimation',
+    screen: RNLayoutAnimation,
+  },
+  {
+    title: 'AsyncStorageExample',
+    name: 'AsyncStorageExample',
+    screen: AsyncStorageExample,
+  },
 ];
 export default ExampleList;

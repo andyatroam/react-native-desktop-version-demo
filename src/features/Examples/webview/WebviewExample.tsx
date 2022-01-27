@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {WebView} from 'react-native-webview';
-import {Paragraph} from '../../components/Typography';
+import {Paragraph} from '../../../components/Typography';
 
 const styles = StyleSheet.create({
   background: {
