@@ -20,12 +20,11 @@ const styles = StyleSheet.create({
   },
 });
 
-const LoadingScreen = () => {
+const SplashScreen = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.background}>
-      {/* <ActivityIndicator /> */}
       <Heading>React Native macOS demo</Heading>
       <Paragraph>
         This is a demo project for demonstrating the ability of React Native{' '}
@@ -34,11 +33,11 @@ const LoadingScreen = () => {
         title="NEXT"
         disabled={false}
         onPress={() => {
-          navigation.navigate('MainScreen');
+          navigation.navigate('Intro');
         }}
       />
     </View>
   );
 };
 
-export default LoadingScreen;
+export default SplashScreen;

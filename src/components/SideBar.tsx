@@ -52,7 +52,7 @@ function getButton({title, icon, onPress}) {
   );
 }
 
-function SideBarScreen({callback}: {callback: (name: string) => void}) {
+function SideBarScreen() {
   const nav = useNavigation();
 
   return (
@@ -61,14 +61,12 @@ function SideBarScreen({callback}: {callback: (name: string) => void}) {
         size="large"
         rounded
         containerStyle={{marginBottom: 30, backgroundColor: '#fde24f'}}
-        title="R"
+        title="D"
       />
-
       {getButton({
         title: 'Examples',
-        icon: 'play',
+        icon: 'navicon',
         onPress: () => {
-          // nav.navigate('Examples');
           nav.dispatch(
             StackActions.replace('MainScreen', {screen: 'Examples'}),
           );
@@ -77,14 +75,14 @@ function SideBarScreen({callback}: {callback: (name: string) => void}) {
       <View style={{flex: 1}} />
       {getButton({
         title: 'Settings',
-        icon: 'play',
+        icon: 'gear',
         onPress: () => {
           nav.dispatch(StackActions.replace('MainScreen', {screen: 'Setting'}));
         },
       })}
       {getButton({
         title: 'Profile',
-        icon: 'play',
+        icon: 'user',
         onPress: () => {
           nav.dispatch(StackActions.replace('MainScreen', {screen: 'Profile'}));
         },

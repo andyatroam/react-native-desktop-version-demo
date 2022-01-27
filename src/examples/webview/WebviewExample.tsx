@@ -2,12 +2,13 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {WebView} from 'react-native-webview';
+import {Paragraph} from '../../components/Typography';
 
 const styles = StyleSheet.create({
   background: {
     flex: 1,
     backgroundColor: 'white',
-    paddingTop: 100,
+    // paddingTop: 100,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -32,28 +33,21 @@ const styles = StyleSheet.create({
 
 function WebviewExample() {
   return (
-    // <SafeAreaView>
     <View style={styles.background}>
-      {/* <Text>This is a Webview test</Text>
-      <Text>This is a Webview test</Text>
-      <Text>This is a Webview test</Text>
-      <Text>This is a Webview test</Text>
-      <Text>This is a Webview test</Text>
-      <Text>This is a Webview test</Text>
-      <Text>This is a Webview test</Text> */}
+      <Paragraph>
+        React Native WebView is a cross-platform library which used to load
+        webpages in your React Native app
+      </Paragraph>
       <WebView
         style={{
-          width: 300,
-          height: 300,
+          width: 500,
+          flex: 1,
           borderWidth: 2,
-          backgroundColor: '#ffcc00',
         }}
         originWhitelist={['*']}
-        source={{uri: 'https://google.com'}}
+        source={{uri: 'https://roamdigital.com'}}
       />
-      <Text>React Native Webview supports all 4 platform</Text>
     </View>
-    // </SafeAreaView>
   );
 }
 

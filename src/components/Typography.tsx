@@ -3,13 +3,14 @@ import {StyleSheet, Text} from 'react-native';
 
 const styles = StyleSheet.create({
   heading: {
-    paddingHorizontal: 20,
-    marginBottom: 20,
+    // paddingHorizontal: 20,
+    marginVertical: 20,
     fontSize: 32,
+    fontWeight: 'bold',
   },
   paragraph: {
-    paddingHorizontal: 20,
-    marginBottom: 20,
+    // paddingHorizontal: 20,
+    marginVertical: 20,
     fontSize: 16,
   },
 });

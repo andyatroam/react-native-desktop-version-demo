@@ -2,6 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {Icon} from 'react-native-elements';
+import {Heading} from '../../components/Typography';
 import ExampleList, {ExampleItemData} from '../../ExampleList';
 
 const styles = StyleSheet.create({
@@ -9,36 +10,32 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     justifyContent: 'center',
-    // alignItems: 'center',
-  },
-  heading: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginVertical: 20,
-    color: '#00214d',
   },
   item: {
     paddingLeft: 10,
-    paddingVertical: 10,
+    paddingVertical: 15,
+    borderRadius: 6,
     marginBottom: 1,
     flexDirection: 'row',
-    backgroundColor: '#ffcc00',
+    backgroundColor: '#fffffe',
+    borderColor: '#00214d',
+    borderWidth: 3,
     marginVertical: 6,
   },
   title: {
     fontSize: 15,
+    fontWeight: 'bold',
   },
 });
 
 const Item = ({title}: {title: string}) => (
   <View style={styles.item}>
-    {/* <Icon name="sc-telegram" /> */}
     <Icon
-      name="play"
+      name="arrow-right"
       hasTVPreferredFocus
       tvParallaxProperties
       type="evilicon"
-      // color="#517fa4"
+      color="#00214d"
     />
     <Text style={styles.title}>{title}</Text>
   </View>
@@ -60,7 +57,7 @@ const ExampleScreen = () => {
 
   return (
     <View style={styles.background}>
-      <Text style={styles.heading}>Examples list</Text>
+      <Heading>Examples list</Heading>
       <FlatList data={ExampleList} renderItem={renderItem} />
     </View>
   );
