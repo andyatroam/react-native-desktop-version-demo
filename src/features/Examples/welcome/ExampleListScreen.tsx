@@ -2,8 +2,9 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {Icon} from 'react-native-elements';
-import ScreenContent from '../../../components/ScreenContent';
-import ExampleList, {ExampleItemData} from '../../../ExampleList';
+import ScreenContent from '../../../components/PageContainer';
+import TopBar from '../../../components/TopBar';
+import ExampleList, {ExampleItemData} from '../ExampleList';
 
 const styles = StyleSheet.create({
   item: {
@@ -49,11 +50,14 @@ const ExampleScreen = () => {
     </TouchableOpacity>
   );
   return (
-    <ScreenContent
-      title="Example list"
-      content={<FlatList data={ExampleList} renderItem={renderItem} />}
-      footer={<Text>Footer</Text>}
-    />
+    <>
+      <TopBar />
+      <ScreenContent
+        title="Example list"
+        content={<FlatList data={ExampleList} renderItem={renderItem} />}
+        footer={<Text>Footer</Text>}
+      />
+    </>
   );
 };
 

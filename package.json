@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "mac": "react-native run-macos",
-    "mac:build": "xcodebuild -workspace macos/ReactNativeMacOSDemo.xcworkspace -scheme ReactNativeMacOSDemo-macOS -config Release -exportPath $PWD/build",
+    "mac:build": "xcodebuild -workspace macos/ReactNativeMacOSDemo.xcworkspace -scheme ReactNativeMacOSDemo-macOS -config Release",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",

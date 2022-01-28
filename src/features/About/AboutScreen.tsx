@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text} from 'react-native';
-import ScreenContent from '../../components/ScreenContent';
+import ScreenContent from '../../components/PageContainer';
 
 const AboutScreen = () => {
   return (

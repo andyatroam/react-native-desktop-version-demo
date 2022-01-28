@@ -2,17 +2,11 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
 import {View} from 'react-native';
 import {Icon, Text} from 'react-native-elements';
+import AboutScreen from '../features/About/AboutScreen';
+import SettingsScreen from '../features/Setting/SettingsScreen';
 import ExampleStack from './ExampleStack';
 
 const Tab = createBottomTabNavigator();
-
-const TabView = () => {
-  return (
-    <View>
-      <Text>This is the tab inner view</Text>
-    </View>
-  );
-};
 
 const getTabIcon = (routeName: string, focused: boolean = false) => {
   let iconName = 'gear';
@@ -36,34 +30,33 @@ const getTabIcon = (routeName: string, focused: boolean = false) => {
 
 const BottomTabScreen = () => {
   return (
-    <View style={{flex: 1, flexDirection: 'row'}}>
-      <Tab.Navigator
-        initialRouteName="Main"
+    <Tab.Navigator
+      initialRouteName="Main"
+      options={{headerShown: false}}
+      screenOptions={({route}) => ({
+        tabBarIcon: ({focused}) => getTabIcon(route.name, focused),
+      })}
+      tabBarOptions={{
+        activeTintColor: '#00ebc7',
+        inactiveTintColor: '#00214d',
+      }}>
+      <Tab.Screen
         options={{headerShown: false}}
-        screenOptions={({route}) => ({
-          tabBarIcon: ({focused}) => getTabIcon(route.name, focused),
-        })}
-        tabBarOptions={{
-          activeTintColor: '#00ebc7',
-          inactiveTintColor: '#00214d',
-        }}>
-        <Tab.Screen
-          options={{headerShown: false}}
-          name="Examples"
-          component={ExampleStack}
-        />
-        <Tab.Screen
-          options={{headerShown: false}}
-          name="Setting"
-          component={TabView}
-        />
-        <Tab.Screen
-          options={{headerShown: false}}
-          name="Profile"
-          component={TabView}
-        />
-      </Tab.Navigator>
-    </View>
+        name="Examples"
+        component={ExampleStack}
+      />
+      <Tab.Screen
+        options={{headerShown: false}}
+        name="Setting"
+        component={SettingsScreen}
+      />
+      <Tab.Screen
+        options={{headerShown: false}}
+        name="Profile"
+        component={AboutScreen}
+      />
+    </Tab.Navigator>
+    // </View>
   );
 };
 

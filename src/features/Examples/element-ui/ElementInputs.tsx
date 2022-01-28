@@ -1,7 +1,7 @@
 import React from 'react';
-import {Icon, Input} from 'react-native-elements';
+import {Input} from 'react-native-elements';
 
-function InputExample() {
+function ElementInput() {
   return (
     <>
       <Input autoCompleteType="" placeholder="BASIC INPUT" />
@@ -39,4 +39,4 @@ function InputExample() {
   );
 }
 
-export default InputExample;
+export default ElementInput;

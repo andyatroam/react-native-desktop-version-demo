@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, ScrollView, StyleSheet, Image} from 'react-native';
-import {Text, Card, Button, Icon} from 'react-native-elements';
+import {Image, ScrollView, StyleSheet, View} from 'react-native';
+import {Button, Card, Text} from 'react-native-elements';
 
 const users = [
   {
