@@ -29,7 +29,6 @@ function RootNavigator() {
             component={WindowColumnStack}
           />
         )}
-        {/* <NavigateStack.Screen name="Examples" component={ExampleStack} /> */}
       </NavigateStack.Navigator>
     </>
   );

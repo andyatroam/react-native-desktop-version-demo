@@ -1,16 +1,53 @@
-Debug iOS version 
+# About The Project
+This is a demo project to demonstrate the features that can be build on macOS  app by using React Native.
 
-`yarn ios`
+The purposes of this project are:
 
-Debug macOS version 
+- [] To test UI libraries can be used 
+- [] How to build and export macOS app by using command line or XCode
+- [] Test some common used libraries
+- [] How to convert an exist React Native project to a project supports desktop version
+- [] Test some animation library and their performance.
+- [] Test how to deal with different layouts on mobile and desktop app with one codebase
 
-`yarn mac`
+<div align="center">
+<img src="images/macos-screenshot.png" alt="Logo" width="500">
+<img src="images/ios-screenshot.png" alt="Logo" width="300">
+</div>
 
-Build an macOS version app
+# Getting Started
 
-`yarn mac:build`
+## Installation
 
-### Color Theme
+- Install NPM packages
 
-https://www.happyhues.co/palettes/2
-Icons: https://evil-icons.io/
+```
+yarn install
+```
+
+- Install iOS and macOS CocoaPods package 
+
+```
+yarn pod
+```
+
+## Development
+
+Run iOS version
+
+```
+yarn ios
+```
+
+Run macOS version 
+
+```
+yarn mac
+```
+
+## Build macOS version
+
+```
+yarn mac:build
+```
+

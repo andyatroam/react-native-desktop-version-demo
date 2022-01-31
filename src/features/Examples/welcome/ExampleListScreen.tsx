@@ -1,6 +1,13 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  FlatList,
+  Platform,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {Icon} from 'react-native-elements';
 import ScreenContent from '../../../components/PageContainer';
 import TopBar from '../../../components/TopBar';
@@ -51,7 +58,7 @@ const ExampleScreen = () => {
   );
   return (
     <>
-      <TopBar />
+      {(Platform.OS === 'ios' || Platform.OS === 'android') && <TopBar />}
       <ScreenContent
         title="Example list"
         content={<FlatList data={ExampleList} renderItem={renderItem} />}
