@@ -1,7 +1,7 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import ExampleList from '../features/Examples/ExampleList';
-import ExampleScreen from '../features/Examples/welcome/ExampleListScreen';
+import ExampleScreen from '../features/Examples/ExampleListScreen';
 const Stack = createStackNavigator();
 
 function ExampleStack() {

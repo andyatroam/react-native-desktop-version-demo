@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, {useState} from 'react';
 import {Text, View} from 'react-native';
 import {TouchableRipple} from 'react-native-paper';
+import ExampleContainer from '../../../components/ExampleContainer';
 
 function AsyncStorageExample() {
   const [counter, setCounter] = useState(0);
@@ -29,7 +30,7 @@ function AsyncStorageExample() {
   };
 
   return (
-    <View>
+    <ExampleContainer title="AsyncStorage test">
       <TouchableRipple
         onPress={async () => {
           const obj = await getObject();
@@ -45,7 +46,7 @@ function AsyncStorageExample() {
         <Text>Read the saved number with AsyncStorage</Text>
       </TouchableRipple>
       <Text>{`Result: ${counter}`}</Text>
-    </View>
+    </ExampleContainer>
   );
 }
 

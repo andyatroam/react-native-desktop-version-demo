@@ -1,7 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
-import {Paragraph} from '../../../components/Typography';
+import {Paragraph} from '../../components/Typography';
 
 const styles = StyleSheet.create({
   background: {

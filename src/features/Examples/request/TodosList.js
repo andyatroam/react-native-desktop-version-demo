@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {ActivityIndicator, View, FlatList, Text} from 'react-native';
+import ExampleContainer from '../../../components/ExampleContainer';
 import TodoItem from './TodoItem';
 
 class TodosList extends Component {
@@ -19,7 +20,9 @@ class TodosList extends Component {
 
   render() {
     return (
-      <View>
+      <ExampleContainer
+        title="Simple fetch data"
+        description="Use simple fetch function to load json data from internet">
         <ActivityIndicator size="large" animating={this.state.loading} />
         <FlatList
           data={this.state.todos}
@@ -27,7 +30,7 @@ class TodosList extends Component {
           renderItem={({item}) => <TodoItem title={item.title} />}
           keyExtractor={item => item.id.toString()}
         />
-      </View>
+      </ExampleContainer>
     );
   }
 }

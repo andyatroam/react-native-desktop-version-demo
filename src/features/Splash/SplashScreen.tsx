@@ -1,12 +1,11 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {Button, StyleSheet, Text, View} from 'react-native';
-import {Heading, Paragraph} from '../../../components/Typography';
+import {Button, StyleSheet, View} from 'react-native';
+import {Heading, Paragraph} from '../../components/Typography';
 
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: 'white',
     padding: 20,
     justifyContent: 'center',
     alignItems: 'center',
@@ -14,8 +13,6 @@ const styles = StyleSheet.create({
   button: {
     paddingHorizontal: 20,
     minWidth: 100,
-    backgroundColor: '#ffcc00',
-    borderColor: '#cccccc',
     borderWidth: 1,
   },
 });

@@ -9,9 +9,9 @@ import {
   View,
 } from 'react-native';
 import {Icon} from 'react-native-elements';
-import ScreenContent from '../../../components/PageContainer';
-import TopBar from '../../../components/TopBar';
-import ExampleList, {ExampleItemData} from '../ExampleList';
+import ScreenContent from '../../components/PageContainer';
+import TopBar from '../../components/TopBar';
+import ExampleList, {ExampleItemData} from './ExampleList';
 
 const styles = StyleSheet.create({
   item: {
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     marginBottom: 1,
     flexDirection: 'row',
-    backgroundColor: '#fffffe',
+    // backgroundColor: '#fffffe',
     borderColor: '#00214d',
     borderWidth: 3,
     marginVertical: 6,

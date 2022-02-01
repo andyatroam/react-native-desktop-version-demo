@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 19,
     fontWeight: 'bold',
-    marginBottom: 15,
+    marginBottom: 12,
   },
   desc: {
     fontSize: 14,
@@ -37,14 +37,41 @@ function ExampleContainer({
 }) {
   return (
     <View style={styles.container}>
-      {/* <Text style={styles.title}>{title}</Text> */}
       <Heading>{title}</Heading>
-      {/* <Text style={styles.desc} /> */}
-      <Paragraph>{description}</Paragraph>
+      {!!description && <Paragraph>{description}</Paragraph>}
       <View style={styles.content}>{children}</View>
       {!!footer && <View style={styles.footer}>{footer}</View>}
     </View>
   );
 }
 
+const sectionStyles = StyleSheet.create({
+  container: {
+    marginVertical: 10,
+    flexDirection: 'column',
+    // alignItems: 'center',
+  },
+  desc: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 15,
+  },
+});
+
+function ExampleSection({
+  description,
+  children,
+}: {
+  description?: string;
+  children?: React.ReactNode;
+}) {
+  return (
+    <View style={sectionStyles.container}>
+      {!!description && <Text style={sectionStyles.desc}>{description}</Text>}
+      <View>{children}</View>
+    </View>
+  );
+}
+
 export default ExampleContainer;
+export {ExampleSection};

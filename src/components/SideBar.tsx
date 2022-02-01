@@ -12,6 +12,10 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  greeting: {
+    color: '#fff',
+    marginBottom: 10,
+  },
   button: {
     paddingHorizontal: 10,
     paddingVertical: 10,
@@ -63,6 +67,7 @@ function SideBarScreen() {
         containerStyle={{marginBottom: 30, backgroundColor: '#fde24f'}}
         title="D"
       />
+      <Text style={styles.greeting}>Good morning!!</Text>
       {getButton({
         title: 'Examples',
         icon: 'navicon',
