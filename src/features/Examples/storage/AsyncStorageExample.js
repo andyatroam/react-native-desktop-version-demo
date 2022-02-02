@@ -1,7 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import React, {useState} from 'react';
-import {Text, View} from 'react-native';
-import {TouchableRipple} from 'react-native-paper';
+import React, {useEffect, useState} from 'react';
+import {Button, Text} from 'react-native';
 import ExampleContainer from '../../../components/ExampleContainer';
 
 function AsyncStorageExample() {
@@ -11,41 +10,41 @@ function AsyncStorageExample() {
     try {
       const jsonValue = JSON.stringify(value);
       await AsyncStorage.setItem('test_storage_Key', jsonValue);
-
-      const savedValue = await AsyncStorage.getItem('test_storage_Key');
-      console.log('savedValue', savedValue);
     } catch (e) {
-      // saving error
+      console.log('Error: ', e);
     }
   };
 
   const getObject = async () => {
     try {
       const jsonValue = await AsyncStorage.getItem('test_storage_Key');
-      console.log('jsonValue', jsonValue);
-      return jsonValue ? JSON.parse(jsonValue) : null;
+      return jsonValue ? JSON.parse(jsonValue) : {counter: 0};
     } catch (e) {
-      // error reading value
+      console.log('Error: ', e);
     }
   };
 
+  const updateCounter = async () => {
+    const obj = await getObject();
+    if (obj && obj.counter >= 0) {
+      storeObject({counter: obj.counter + 1});
+    } else {
+      storeObject({counter: 0});
+    }
+    const viewData = await getObject();
+    setCounter(viewData.counter);
+  };
+  useEffect(() => {
+    updateCounter();
+  }, []);
+
   return (
-    <ExampleContainer title="AsyncStorage test">
-      <TouchableRipple
-        onPress={async () => {
-          const obj = await getObject();
-          storeObject({counter: obj.counter + 1});
-        }}>
-        <Text>Save a number with AsyncStorage</Text>
-      </TouchableRipple>
-      <TouchableRipple
-        onPress={async () => {
-          const obj = await getObject();
-          setCounter(obj.counter);
-        }}>
-        <Text>Read the saved number with AsyncStorage</Text>
-      </TouchableRipple>
-      <Text>{`Result: ${counter}`}</Text>
+    <ExampleContainer title="Async Storage test">
+      <Button
+        title="Increase the view count with AsyncStorage"
+        onPress={updateCounter}
+      />
+      <Text style={{textAlign: 'center'}}>{`View count: ${counter}`}</Text>
     </ExampleContainer>
   );
 }

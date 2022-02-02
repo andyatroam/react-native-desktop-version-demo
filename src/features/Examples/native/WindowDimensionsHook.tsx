@@ -1,20 +1,15 @@
 import React from 'react';
-import {View, StyleSheet, Text, useWindowDimensions} from 'react-native';
+import {useWindowDimensions} from 'react-native';
+import ExampleContainer from '../../../components/ExampleContainer';
 
 const WindowDimensionHook = () => {
   const window = useWindowDimensions();
   return (
-    <View style={styles.container}>
-      <Text>{`Window Dimensions: ${window.width} x ${window.height} `}</Text>
-    </View>
+    <ExampleContainer
+      title="Window Dimension"
+      description={`Window Dimensions: ${window.width} x ${window.height} `}
+    />
   );
 };
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default WindowDimensionHook;

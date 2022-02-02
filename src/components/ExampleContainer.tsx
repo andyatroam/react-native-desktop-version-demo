@@ -7,10 +7,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    padding: 20,
+    padding: 10,
   },
   content: {
     flex: 1,
+    // padding: 15,
   },
   footer: {},
   title: {
@@ -49,12 +50,10 @@ const sectionStyles = StyleSheet.create({
   container: {
     marginVertical: 10,
     flexDirection: 'column',
-    // alignItems: 'center',
   },
   desc: {
     fontSize: 16,
     fontWeight: 'bold',
-    marginBottom: 15,
   },
 });
 

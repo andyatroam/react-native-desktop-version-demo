@@ -12,12 +12,12 @@ function ExampleStack() {
         component={ExampleScreen}
         options={{headerShown: false}}
       />
-      {ExampleList.map(({title, name, screen: ExampleItemScreen}) => (
+      {ExampleList.map(({title, screen: ExampleItemScreen}) => (
         <Stack.Screen
           key={title}
-          name={name}
+          name={title.replace(/ /g, '')}
           component={ExampleItemScreen}
-          options={{headerShown: true}}
+          options={{headerShown: true, title}}
         />
       ))}
     </Stack.Navigator>

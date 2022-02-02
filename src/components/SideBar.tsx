@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     minWidth: 180,
     flexDirection: 'row',
     alignItems: 'center',
-    // backgroundColor: '#00ebc7',
     borderColor: '#00214d',
     borderWidth: 3,
     borderRadius: 6,

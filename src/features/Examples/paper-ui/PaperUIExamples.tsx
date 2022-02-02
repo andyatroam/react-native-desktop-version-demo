@@ -111,7 +111,7 @@ function PaperUIs() {
   return (
     <ExampleContainer
       title="React Native Paper"
-      description="Paper is a collection of UI components for React Native. But it's not working very well on macOS platform. ">
+      description="The UI of this library presented on the iOS and macOS platform are very different">
       <PaperProvider theme={theme}>
         {/* <ScrollView> */}
         {PaperButtons()}

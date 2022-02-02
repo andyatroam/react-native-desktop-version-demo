@@ -4,8 +4,8 @@ import {
   NavigationContainer,
 } from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import React, {useState} from 'react';
-import {Appearance, Platform, StyleSheet, useColorScheme} from 'react-native';
+import React from 'react';
+import {Platform, StyleSheet, useColorScheme} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import IntroScreen from '../features/Intro/IntroScreen';
 import SplashScreen from '../features/Splash/SplashScreen';

@@ -6,8 +6,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    padding: 20,
-    // justifyContent: 'center',
+    padding: 10,
   },
   content: {
     flex: 1,

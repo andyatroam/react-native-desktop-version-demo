@@ -1,6 +1,6 @@
-import MoveXY from './animation/MoveXY';
+import MoveXY from './animation/RNMovementAnimation';
 import RNLayoutAnimation from './animation/RNLayoutAnimation';
-import RotationRect from './animation/RotationRect';
+import RotationRect from './animation/RNRotationAnimation';
 import RNElementExample from './element-ui/ElementUIExample';
 import ColorSchemeHook from './native/ColorSchemeHook';
 import WindowDimensionHook from './native/WindowDimensionsHook';
@@ -11,50 +11,38 @@ import WebviewExample from './webview/WebviewExample';
 
 export interface ExampleItemData {
   title: string;
-  name: string;
   screen: any;
 }
 
 const ExampleList: ExampleItemData[] = [
   {
-    title: 'React Native Element UI',
-    name: 'ReactNativeElementUI',
+    title: 'React Native Element UI library',
     screen: RNElementExample,
   },
   {
-    title: 'React Native Paper UI',
-    name: 'ReactNativePaperUI',
+    title: 'React Native Paper UI library',
     screen: PaperButtons,
   },
-  // {
-  //   title: 'React Native Element Cards',
-  //   name: 'RNElementCards',
-  //   screen: ElementCards,
-  // },
-  // {title: 'Element Input Example', name: 'InputExample', screen: InputExample},
-  {title: 'Simple Animation', name: 'SimpleAnimation', screen: MoveXY},
-
+  {title: 'Webview ', screen: WebviewExample},
+  {title: 'OS color scheme', screen: ColorSchemeHook},
   {
-    title: 'Rotation Animation',
-    name: 'RotationAnimation',
-    screen: RotationRect,
-  },
-  {title: 'Webview', name: 'Webview', screen: WebviewExample},
-  {title: 'Simple data fetching', name: 'TodosList', screen: TodosList},
-  {title: 'Color Scheme', name: 'ColorSchemeHook', screen: ColorSchemeHook},
-  {
-    title: 'WindowDimensionHook',
-    name: 'WindowDimensionHook',
+    title: 'Window dimension ',
     screen: WindowDimensionHook,
   },
+  {title: 'Simple movement animation', screen: MoveXY},
   {
-    title: 'RNLayoutAnimation',
-    name: 'RNLayoutAnimation',
-    screen: RNLayoutAnimation,
+    title: 'Rotation animation',
+
+    screen: RotationRect,
   },
   {
-    title: 'AsyncStorageExample',
-    name: 'AsyncStorageExample',
+    title: 'Layout animation',
+    screen: RNLayoutAnimation,
+  },
+
+  {title: 'Simple data fetching', screen: TodosList},
+  {
+    title: 'AsyncStorage example',
     screen: AsyncStorageExample,
   },
 ];
