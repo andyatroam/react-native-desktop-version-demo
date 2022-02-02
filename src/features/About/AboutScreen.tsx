@@ -6,7 +6,7 @@ const AboutScreen = () => {
   return (
     <ScreenContent
       title="About"
-      content={<Text>This is the tab inner view</Text>}
+      content={<Text>This is the about page</Text>}
     />
   );
 };

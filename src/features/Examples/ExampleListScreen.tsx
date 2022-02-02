@@ -9,9 +9,9 @@ import {
   View,
 } from 'react-native';
 import {Icon} from 'react-native-elements';
-import ScreenContent from '../../../components/PageContainer';
-import TopBar from '../../../components/TopBar';
-import ExampleList, {ExampleItemData} from '../ExampleList';
+import ScreenContent from '../../components/PageContainer';
+import TopBar from '../../components/TopBar';
+import ExampleList, {ExampleItemData} from './ExampleList';
 
 const styles = StyleSheet.create({
   item: {
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     marginBottom: 1,
     flexDirection: 'row',
-    backgroundColor: '#fffffe',
+    // backgroundColor: '#fffffe',
     borderColor: '#00214d',
     borderWidth: 3,
     marginVertical: 6,
@@ -49,9 +49,9 @@ const ExampleScreen = () => {
 
   const renderItem = ({item}: {item: ExampleItemData}) => (
     <TouchableOpacity
-      key={item.name}
+      key={item.title.replace(/ /g, '')}
       onPress={() => {
-        navigation.navigate(item.name);
+        navigation.navigate(item.title.replace(/ /g, ''));
       }}>
       <Item title={item.title} />
     </TouchableOpacity>
@@ -62,7 +62,7 @@ const ExampleScreen = () => {
       <ScreenContent
         title="Example list"
         content={<FlatList data={ExampleList} renderItem={renderItem} />}
-        footer={<Text>Footer</Text>}
+        footer={<Text>2022</Text>}
       />
     </>
   );

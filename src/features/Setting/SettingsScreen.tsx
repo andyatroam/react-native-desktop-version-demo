@@ -6,7 +6,7 @@ const SettingsScreen = () => {
   return (
     <ScreenContent
       title="Settings"
-      content={<Text>This is the tab inner view</Text>}
+      content={<Text>This is the settings page</Text>}
     />
   );
 };

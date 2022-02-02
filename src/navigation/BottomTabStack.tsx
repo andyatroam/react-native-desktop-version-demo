@@ -56,7 +56,6 @@ const BottomTabScreen = () => {
         component={AboutScreen}
       />
     </Tab.Navigator>
-    // </View>
   );
 };
 

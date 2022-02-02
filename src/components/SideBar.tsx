@@ -12,13 +12,16 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  greeting: {
+    color: '#fff',
+    marginBottom: 10,
+  },
   button: {
     paddingHorizontal: 10,
     paddingVertical: 10,
     minWidth: 180,
     flexDirection: 'row',
     alignItems: 'center',
-    // backgroundColor: '#00ebc7',
     borderColor: '#00214d',
     borderWidth: 3,
     borderRadius: 6,
@@ -63,6 +66,7 @@ function SideBarScreen() {
         containerStyle={{marginBottom: 30, backgroundColor: '#fde24f'}}
         title="D"
       />
+      <Text style={styles.greeting}>Good morning!!</Text>
       {getButton({
         title: 'Examples',
         icon: 'navicon',

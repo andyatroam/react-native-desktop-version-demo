@@ -1,21 +1,31 @@
-import {NavigationContainer} from '@react-navigation/native';
+import {
+  DarkTheme,
+  DefaultTheme,
+  NavigationContainer,
+} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-import {Platform} from 'react-native';
+import {Platform, StyleSheet, useColorScheme} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import WelcomeScreen from '../features/Examples/welcome/SplashScreen';
+import IntroScreen from '../features/Intro/IntroScreen';
+import SplashScreen from '../features/Splash/SplashScreen';
 import BottomTabScreen from './BottomTabStack';
-import IntroStack from './IntroStack';
 import WindowColumnStack from './WindowColumnStack';
 
 const NavigateStack = createStackNavigator();
+
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
+});
 
 function RootNavigator() {
   return (
     <>
       <NavigateStack.Navigator screenOptions={{headerShown: false}}>
-        <NavigateStack.Screen name="Welcome" component={WelcomeScreen} />
-        <NavigateStack.Screen name="Intro" component={IntroStack} />
+        <NavigateStack.Screen name="Splash" component={SplashScreen} />
+        <NavigateStack.Screen name="Intro" component={IntroScreen} />
         {Platform.OS === 'ios' || Platform.OS === 'android' ? (
           <NavigateStack.Screen
             name="MainScreen"
@@ -35,9 +45,12 @@ function RootNavigator() {
 }
 
 export default function AppRoot() {
+  const colorScheme = useColorScheme();
+
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#fffffe'}}>
-      <NavigationContainer>
+    <SafeAreaView style={styles.root}>
+      <NavigationContainer
+        theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <RootNavigator />
       </NavigationContainer>
     </SafeAreaView>

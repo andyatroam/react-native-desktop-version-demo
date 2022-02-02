@@ -1,21 +1,18 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {Button, StyleSheet, Text, View} from 'react-native';
-import {Heading, Paragraph} from '../../../components/Typography';
+import {Button, StyleSheet, View} from 'react-native';
+import {Heading, Paragraph} from '../../components/Typography';
 
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: 'white',
-    padding: 20,
+    padding: 10,
     justifyContent: 'center',
-    alignItems: 'center',
+    // alignItems: 'center',
   },
   button: {
     paddingHorizontal: 20,
     minWidth: 100,
-    backgroundColor: '#ffcc00',
-    borderColor: '#cccccc',
     borderWidth: 1,
   },
 });
@@ -25,10 +22,12 @@ const SplashScreen = () => {
 
   return (
     <View style={styles.background}>
-      <Heading>React Native macOS demo</Heading>
+      <Heading>React Native desktop app demo</Heading>
       <Paragraph>
-        This is a demo project for demonstrating the ability of React Native{' '}
+        This is a demo project to demonstrate the features that can be built on
+        desktop app by using React Native
       </Paragraph>
+      <View style={{height: 60}} />
       <Button
         title="NEXT"
         disabled={false}
