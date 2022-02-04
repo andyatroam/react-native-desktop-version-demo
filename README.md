@@ -52,3 +52,6 @@ yarn mac
 yarn mac:build
 ```
 
+## Install the demo app
+
+You can download the app from [the release page](https://github.com/andyatroam/react-native-desktop-version-demo/releases). Because the app is packaged by using "Unidentified Developers", so you may not be able to open the app after installing. Yon may need to follow the [Apple doc](https://support.apple.com/en-us/HT202491) to make it work.

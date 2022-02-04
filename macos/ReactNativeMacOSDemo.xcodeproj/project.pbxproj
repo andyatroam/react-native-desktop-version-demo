@@ -16,6 +16,7 @@
 		026BDB0627A0F3670073800A /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 026BDAFD27A0F3670073800A /* FontAwesome5_Regular.ttf */; };
 		026BDB0727A0F3670073800A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 026BDAFE27A0F3670073800A /* FontAwesome.ttf */; };
 		026BDB0827A0F3670073800A /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 026BDAFF27A0F3670073800A /* EvilIcons.ttf */; };
+		02CE0E1E27ACC59400F57AE6 /* libRNCNetInfo-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CE0E1D27ACC57500F57AE6 /* libRNCNetInfo-macOS.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -29,6 +30,30 @@
 		B2F802AB6C66BADFA33FB8D8 /* libPods-ReactNativeMacOSDemo-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3178EA51FA3DEEA142D0B74C /* libPods-ReactNativeMacOSDemo-macOS.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		02CE0E1827ACC57500F57AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CE0E1227ACC57500F57AE6 /* RNCNetInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNCNetInfo;
+		};
+		02CE0E1A27ACC57500F57AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CE0E1227ACC57500F57AE6 /* RNCNetInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5027B1B2237B30F00F1AABA;
+			remoteInfo = "RNCNetInfo-tvOS";
+		};
+		02CE0E1C27ACC57500F57AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CE0E1227ACC57500F57AE6 /* RNCNetInfo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3846DAC62403170500B4283E;
+			remoteInfo = "RNCNetInfo-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		026BDAF727A0F3670073800A /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
@@ -40,6 +65,7 @@
 		026BDAFD27A0F3670073800A /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
 		026BDAFE27A0F3670073800A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		026BDAFF27A0F3670073800A /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		02CE0E1227ACC57500F57AE6 /* RNCNetInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RNCNetInfo.xcodeproj; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativeMacOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeMacOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CE0E1E27ACC59400F57AE6 /* libRNCNetInfo-macOS.a in Frameworks */,
 				420C6B29E5D77518A2CA25D1 /* libPods-ReactNativeMacOSDemo-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +130,25 @@
 			);
 			name = Fonts;
 			path = "../../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
+		02CE0E1127ACC57500F57AE6 /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				02CE0E1227ACC57500F57AE6 /* RNCNetInfo.xcodeproj */,
+			);
+			name = macos;
+			path = "../node_modules/@react-native-community/netinfo/macos";
+			sourceTree = "<group>";
+		};
+		02CE0E1327ACC57500F57AE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02CE0E1927ACC57500F57AE6 /* libRNCNetInfo.a */,
+				02CE0E1B27ACC57500F57AE6 /* libRNCNetInfo-tvOS.a */,
+				02CE0E1D27ACC57500F57AE6 /* libRNCNetInfo-macOS.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* ReactNativeMacOSDemo-iOS */ = {
@@ -162,6 +208,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				02CE0E1127ACC57500F57AE6 /* macos */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -264,6 +311,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 02CE0E1327ACC57500F57AE6 /* Products */;
+					ProjectRef = 02CE0E1227ACC57500F57AE6 /* RNCNetInfo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* ReactNativeMacOSDemo-iOS */,
@@ -271,6 +324,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		02CE0E1927ACC57500F57AE6 /* libRNCNetInfo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCNetInfo.a;
+			remoteRef = 02CE0E1827ACC57500F57AE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02CE0E1B27ACC57500F57AE6 /* libRNCNetInfo-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNCNetInfo-tvOS.a";
+			remoteRef = 02CE0E1A27ACC57500F57AE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02CE0E1D27ACC57500F57AE6 /* libRNCNetInfo-macOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNCNetInfo-macOS.a";
+			remoteRef = 02CE0E1C27ACC57500F57AE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
