@@ -2,6 +2,7 @@ import React from 'react';
 import {Image, Text, useColorScheme} from 'react-native';
 import ExampleContainer from '../../../components/ExampleContainer';
 import OSColourSchemeImage from '../../assets/images/os_colour_scheme.png';
+
 const ColorSchemeHook = () => {
   const colorScheme = useColorScheme();
   return (

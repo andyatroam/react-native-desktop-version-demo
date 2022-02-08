@@ -1,5 +1,6 @@
 import React from 'react';
 import {useWindowDimensions} from 'react-native';
+import {Text} from 'react-native-elements';
 import ExampleContainer from '../../../components/ExampleContainer';
 
 const WindowDimensionHook = () => {
@@ -7,8 +8,9 @@ const WindowDimensionHook = () => {
   return (
     <ExampleContainer
       title="Window Dimension"
-      description={`Window Dimensions: ${window.width} x ${window.height} `}
-    />
+      description="Resize the windows to see the changes below on the macOS version of app">
+      <Text>{`Window Dimensions: ${window.width} x ${window.height} `}</Text>
+    </ExampleContainer>
   );
 };
 
